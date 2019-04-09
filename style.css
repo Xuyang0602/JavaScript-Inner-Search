@@ -1,0 +1,9 @@
+.demo{width:800px; margin:40px auto 0 auto; min-height:250px; font-size:14px}
+.demo p{line-height:22px}
+.demo p strong{color:#f30}
+.highlight { background: yellow; color: blue; }
+.prelight { background: blue; color: white; }
+#tip { background: #FFFFCC; border: 1px solid #999; width: 200px; text-align: center; display: none; font-size: 12px; }
+#search_box { background: white; opacity: 0.8; text-align:right }
+#search_btn { background: #0f79be; margin-top: 6px; border-radius: 2px; border: 0px; width: 100px; line-height: 24px; color: white; }
+#searchstr { font-size: 14px; height: 20px; }

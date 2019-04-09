@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <h1>Hello Plunker!</h1>
+  <input type="text" id="searchBox" placeholder="enter the word" />
+
+  <ul>
+    <li><a href="#">Adele</a></li>
+    <li><a href="#">Agnes</a></li>
+
+    <li><a href="#">Billy</a></li>
+    <li><a href="#">Bob</a></li>
+
+    <li><a href="#">Calvin</a></li>
+    <li><a href="#">Christina</a></li>
+    <li><a href="#">Cindy</a></li>
+
+  </ul>
+
+  <script type="text/javascript" charset="utf-8">
+    (function() {
+      var input = document.getElementById("searchBox");
+      
+      
+      var li, a, tmp;
+      input.addEventListener("keyup", function() {
+        var content = input.value.toUpperCase();
+        li = document.getElementsByTagName("li");
+        if (li.length == 0) return;
+        for (var i = 0; i < li.length; i++) {
+          if (li[i] == undefined) break;
+          else {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a == undefined) continue;
+            else {
+              tmp = a.innerHTML.toUpperCase();
+              if (tmp.indexOf(content) > -1) {
+                li[i].style.display = "blocka";
+              } else {
+                li[i].style.display = "none";
+              }
+            }
+          }
+        }
+      })
+    })();
+  </script>
+
+</body>
+
+</html>
